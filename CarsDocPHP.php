@@ -17,7 +17,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connected successfully";
-
+ //connecting with the database
  $sql_stat = "INSERT INTO `carsaccounts`(`Email`, `Username`, `Password`) VALUES ('$personEmail','$personUserName','$personPassword')";
 if (mysqli_query($conn, $sql_stat)) {
     header('Location: SuccessfulAccount.html');
